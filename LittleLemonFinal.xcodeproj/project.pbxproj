@@ -16,6 +16,10 @@
 		7DEB2B8A2BA1574B008B9425 /* LittleLemonFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B892BA1574B008B9425 /* LittleLemonFinalTests.swift */; };
 		7DEB2B942BA1574B008B9425 /* LittleLemonFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B932BA1574B008B9425 /* LittleLemonFinalUITests.swift */; };
 		7DEB2B962BA1574B008B9425 /* LittleLemonFinalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B952BA1574B008B9425 /* LittleLemonFinalUITestsLaunchTests.swift */; };
+		7DFEA4F22BAA0F1200D31CE6 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEA4F12BAA0F1200D31CE6 /* Onboarding.swift */; };
+		7DFEA4F42BABB1D200D31CE6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEA4F32BABB1D200D31CE6 /* Home.swift */; };
+		7DFEA4F62BABB20700D31CE6 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEA4F52BABB20700D31CE6 /* Menu.swift */; };
+		7DFEA4F82BABB7FC00D31CE6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEA4F72BABB7FC00D31CE6 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		7DEB2B8F2BA1574B008B9425 /* LittleLemonFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEB2B932BA1574B008B9425 /* LittleLemonFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonFinalUITests.swift; sourceTree = "<group>"; };
 		7DEB2B952BA1574B008B9425 /* LittleLemonFinalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonFinalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DFEA4F12BAA0F1200D31CE6 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		7DFEA4F32BABB1D200D31CE6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7DFEA4F52BABB20700D31CE6 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		7DFEA4F72BABB7FC00D31CE6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 				7DEB2B7C2BA1574A008B9425 /* Persistence.swift */,
 				7DEB2B7E2BA1574A008B9425 /* LittleLemonFinal.xcdatamodeld */,
 				7DEB2B792BA1574A008B9425 /* Preview Content */,
+				7DFEA4F12BAA0F1200D31CE6 /* Onboarding.swift */,
+				7DFEA4F32BABB1D200D31CE6 /* Home.swift */,
+				7DFEA4F52BABB20700D31CE6 /* Menu.swift */,
+				7DFEA4F72BABB7FC00D31CE6 /* UserProfile.swift */,
 			);
 			path = LittleLemonFinal;
 			sourceTree = "<group>";
@@ -265,7 +277,11 @@
 			files = (
 				7DEB2B802BA1574A008B9425 /* LittleLemonFinal.xcdatamodeld in Sources */,
 				7DEB2B7D2BA1574A008B9425 /* Persistence.swift in Sources */,
+				7DFEA4F62BABB20700D31CE6 /* Menu.swift in Sources */,
+				7DFEA4F22BAA0F1200D31CE6 /* Onboarding.swift in Sources */,
+				7DFEA4F82BABB7FC00D31CE6 /* UserProfile.swift in Sources */,
 				7DEB2B762BA15749008B9425 /* ContentView.swift in Sources */,
+				7DFEA4F42BABB1D200D31CE6 /* Home.swift in Sources */,
 				7DEB2B742BA15749008B9425 /* LittleLemonFinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
