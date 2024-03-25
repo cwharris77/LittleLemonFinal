@@ -24,8 +24,6 @@ extension Color {
 
 struct Menu: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(sortDescriptors: [])
-    private var dishes: FetchedResults<Dish>
     @State var searchText = ""
     
     func getMenuData() {
@@ -82,57 +80,22 @@ struct Menu: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Spacer()
-                Image("Logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200, alignment: .center)
-                
-                Spacer()
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.gray)
-                    .frame(width: 30, height: 30)
-                    .clipShape(Circle())
-            }
-            .background(Color.white)
-            .padding(.trailing)
-            .frame(height: 40)
+            Header()
             
-            VStack(alignment: .leading) {
-                Text("Little Lemon")
-                    .font(.system(size: 40))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color(hex: "F4CE14"))
-                    .padding()
-                Text("Chicago")
-                    .font(.system(size: 25))
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .padding(.top, -35)
-                
-                Text("We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
-                    .foregroundColor(.white)
-                    .padding()
-                
-                TextField("Search Menu", text: $searchText)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .multilineTextAlignment(.center)
+            VStack {
+                Hero()
+
+                HStack {
+                    TextField("", text: $searchText)
+                        .textFieldStyle(.roundedBorder)
+                    
+                }
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 10)
             }
-            .background(Color(hex: "495e57"))
-            
-            Text("Order for Delivery!")
-                .font(.system(size: 20))
-                .fontWeight(.semibold)
-                .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
-                .padding()
+                .background(Color(red: 73/255, green: 94/255, blue: 87/255)).padding(.bottom, 20)
             
             CategoriesButtons()
-                .frame(width: 400)
             
             FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
                 List {
