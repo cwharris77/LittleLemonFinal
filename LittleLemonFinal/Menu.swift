@@ -93,9 +93,14 @@ struct Menu: View {
                     .padding(.horizontal, 20)
                     .padding(.bottom, 10)
             }
-                .background(Color(red: 73/255, green: 94/255, blue: 87/255)).padding(.bottom, 20)
+                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
+                .padding(.bottom, 20)
             
-            CategoriesButtons()
+            HStack() {
+                Spacer()
+                CategoriesButtons()
+                Spacer()
+            }
             
             FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
                 List {
