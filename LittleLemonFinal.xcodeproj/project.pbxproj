@@ -11,11 +11,15 @@
 		7DEB2B762BA15749008B9425 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B752BA15749008B9425 /* ContentView.swift */; };
 		7DEB2B782BA1574A008B9425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB2B772BA1574A008B9425 /* Assets.xcassets */; };
 		7DEB2B7B2BA1574A008B9425 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB2B7A2BA1574A008B9425 /* Preview Assets.xcassets */; };
-		7DEB2B7D2BA1574A008B9425 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B7C2BA1574A008B9425 /* Persistence.swift */; };
 		7DEB2B802BA1574A008B9425 /* LittleLemonFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B7E2BA1574A008B9425 /* LittleLemonFinal.xcdatamodeld */; };
 		7DEB2B8A2BA1574B008B9425 /* LittleLemonFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B892BA1574B008B9425 /* LittleLemonFinalTests.swift */; };
 		7DEB2B942BA1574B008B9425 /* LittleLemonFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B932BA1574B008B9425 /* LittleLemonFinalUITests.swift */; };
 		7DEB2B962BA1574B008B9425 /* LittleLemonFinalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB2B952BA1574B008B9425 /* LittleLemonFinalUITestsLaunchTests.swift */; };
+		7DEF0E1D2BB1F64F003F1E0D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF0E1B2BB1F64F003F1E0D /* Persistence.swift */; };
+		7DEF0E1E2BB1F64F003F1E0D /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF0E1C2BB1F64F003F1E0D /* FetchedObjects.swift */; };
+		7DEF0E202BB1F6A0003F1E0D /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF0E1F2BB1F6A0003F1E0D /* MenuList.swift */; };
+		7DEF0E222BB1F6AB003F1E0D /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF0E212BB1F6AB003F1E0D /* MenuItem.swift */; };
+		7DEF0E252BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF0E232BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodeld */; };
 		7DFEA4F22BAA0F1200D31CE6 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEA4F12BAA0F1200D31CE6 /* Onboarding.swift */; };
 		7DFEA4F42BABB1D200D31CE6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEA4F32BABB1D200D31CE6 /* Home.swift */; };
 		7DFEA4F62BABB20700D31CE6 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEA4F52BABB20700D31CE6 /* Menu.swift */; };
@@ -45,13 +49,17 @@
 		7DEB2B752BA15749008B9425 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7DEB2B772BA1574A008B9425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DEB2B7A2BA1574A008B9425 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7DEB2B7C2BA1574A008B9425 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7DEB2B7F2BA1574A008B9425 /* LittleLemonFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittleLemonFinal.xcdatamodel; sourceTree = "<group>"; };
 		7DEB2B852BA1574B008B9425 /* LittleLemonFinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonFinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEB2B892BA1574B008B9425 /* LittleLemonFinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonFinalTests.swift; sourceTree = "<group>"; };
 		7DEB2B8F2BA1574B008B9425 /* LittleLemonFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEB2B932BA1574B008B9425 /* LittleLemonFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonFinalUITests.swift; sourceTree = "<group>"; };
 		7DEB2B952BA1574B008B9425 /* LittleLemonFinalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonFinalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DEF0E1B2BB1F64F003F1E0D /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = ../Persistence.swift; sourceTree = "<group>"; };
+		7DEF0E1C2BB1F64F003F1E0D /* FetchedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
+		7DEF0E1F2BB1F6A0003F1E0D /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		7DEF0E212BB1F6AB003F1E0D /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		7DEF0E242BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
 		7DFEA4F12BAA0F1200D31CE6 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		7DFEA4F32BABB1D200D31CE6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		7DFEA4F52BABB20700D31CE6 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -106,16 +114,20 @@
 		7DEB2B722BA15749008B9425 /* LittleLemonFinal */ = {
 			isa = PBXGroup;
 			children = (
+				7DEF0E1B2BB1F64F003F1E0D /* Persistence.swift */,
+				7DEF0E1C2BB1F64F003F1E0D /* FetchedObjects.swift */,
 				7DEB2B732BA15749008B9425 /* LittleLemonFinalApp.swift */,
 				7DEB2B752BA15749008B9425 /* ContentView.swift */,
 				7DEB2B772BA1574A008B9425 /* Assets.xcassets */,
-				7DEB2B7C2BA1574A008B9425 /* Persistence.swift */,
 				7DEB2B7E2BA1574A008B9425 /* LittleLemonFinal.xcdatamodeld */,
 				7DEB2B792BA1574A008B9425 /* Preview Content */,
 				7DFEA4F12BAA0F1200D31CE6 /* Onboarding.swift */,
 				7DFEA4F32BABB1D200D31CE6 /* Home.swift */,
 				7DFEA4F52BABB20700D31CE6 /* Menu.swift */,
 				7DFEA4F72BABB7FC00D31CE6 /* UserProfile.swift */,
+				7DEF0E1F2BB1F6A0003F1E0D /* MenuList.swift */,
+				7DEF0E212BB1F6AB003F1E0D /* MenuItem.swift */,
+				7DEF0E232BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodeld */,
 			);
 			path = LittleLemonFinal;
 			sourceTree = "<group>";
@@ -275,14 +287,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DEF0E1D2BB1F64F003F1E0D /* Persistence.swift in Sources */,
 				7DEB2B802BA1574A008B9425 /* LittleLemonFinal.xcdatamodeld in Sources */,
-				7DEB2B7D2BA1574A008B9425 /* Persistence.swift in Sources */,
 				7DFEA4F62BABB20700D31CE6 /* Menu.swift in Sources */,
 				7DFEA4F22BAA0F1200D31CE6 /* Onboarding.swift in Sources */,
 				7DFEA4F82BABB7FC00D31CE6 /* UserProfile.swift in Sources */,
 				7DEB2B762BA15749008B9425 /* ContentView.swift in Sources */,
 				7DFEA4F42BABB1D200D31CE6 /* Home.swift in Sources */,
+				7DEF0E1E2BB1F64F003F1E0D /* FetchedObjects.swift in Sources */,
+				7DEF0E222BB1F6AB003F1E0D /* MenuItem.swift in Sources */,
 				7DEB2B742BA15749008B9425 /* LittleLemonFinalApp.swift in Sources */,
+				7DEF0E202BB1F6A0003F1E0D /* MenuList.swift in Sources */,
+				7DEF0E252BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +631,17 @@
 			);
 			currentVersion = 7DEB2B7F2BA1574A008B9425 /* LittleLemonFinal.xcdatamodel */;
 			path = LittleLemonFinal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		7DEF0E232BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7DEF0E242BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodel */,
+			);
+			currentVersion = 7DEF0E242BB1FEEA003F1E0D /* ExampleDatabase.xcdatamodel */;
+			name = ExampleDatabase.xcdatamodeld;
+			path = "/Users/cwharris/Documents/GitHub Projects/LittleLemonFinal/LittleLemonFinal/ExampleDatabase.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
