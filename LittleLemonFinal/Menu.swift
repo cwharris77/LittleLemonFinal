@@ -7,6 +7,21 @@
 
 import SwiftUI
 
+extension Color {
+    init(hex: String) {
+        let scanner = Scanner(string: hex)
+        var rgbValue: UInt64 = 0
+
+        scanner.scanHexInt64(&rgbValue)
+
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(rgbValue & 0x0000FF) / 255.0
+
+        self.init(red: Double(red), green: Double(green), blue: Double(blue))
+    }
+}
+
 struct Menu: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: [])
@@ -66,15 +81,58 @@ struct Menu: View {
     }
     
     var body: some View {
-        VStack {
-            Text("Little Lemon")
-            Text("Chicago")
-            Text("This app is for the Little Lemon restaurant")
+        VStack(alignment: .leading) {
+            HStack {
+                Spacer()
+                Image("Logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+                
+                Spacer()
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.gray)
+                    .frame(width: 30, height: 30)
+                    .clipShape(Circle())
+            }
+            .background(Color.white)
+            .padding(.trailing)
+            .frame(height: 40)
             
-            TextField("Search Menu", text: $searchText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+            VStack(alignment: .leading) {
+                Text("Little Lemon")
+                    .font(.system(size: 40))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(hex: "F4CE14"))
+                    .padding()
+                Text("Chicago")
+                    .font(.system(size: 25))
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .padding()
+                    .padding(.top, -35)
+                
+                Text("We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
+                    .foregroundColor(.white)
+                    .padding()
+                
+                TextField("Search Menu", text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .multilineTextAlignment(.center)
+            }
+            .background(Color(hex: "495e57"))
+            
+            Text("Order for Delivery!")
+                .font(.system(size: 20))
+                .fontWeight(.semibold)
+                .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
                 .padding()
-                .multilineTextAlignment(.center)
+            
+            CategoriesButtons()
+                .frame(width: 400)
             
             FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
                 List {
@@ -83,14 +141,13 @@ struct Menu: View {
                             Text("\(dish.title ?? "") \(dish.price ?? "")")
                             let url = URL(string: dish.image ?? "")
                             AsyncImage(url: url)
-                                .frame(width: 200, height: 200)
+                                .frame(width: 50, height: 50)
                         }
                     }
                 }
             }
             
         }
-        .padding()
         .onAppear() {
             getMenuData()
         }
